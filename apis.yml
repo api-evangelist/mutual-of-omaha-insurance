@@ -1,0 +1,7 @@
+aid: mutual-of-omaha-insurance
+url: https://raw.githubusercontent.com/api-evangelist/mutual-of-omaha-insurance/refs/heads/main/apis.yml
+modified: '2026-03-21'
+apis: []
+common:
+  - type: Website
+    url: https://www.mutual-of-omaha-insurance.com
