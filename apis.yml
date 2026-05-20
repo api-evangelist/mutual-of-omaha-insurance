@@ -4,6 +4,10 @@ url:
 modified: '2026-03-21'
 apis: []
 common:
+  - type: GitHubOrganization
+    url: https://github.com/mutualofomaha
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/mutual-of-omaha
   - type: Website
     url: https://www.mutual-of-omaha-insurance.com
 description: >-
