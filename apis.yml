@@ -1,4 +1,5 @@
 aid: mutual-of-omaha-insurance
+name: "Mutual of Omaha"
 specificationVersion: '0.23'
 accessModel:
   pricing: unknown
