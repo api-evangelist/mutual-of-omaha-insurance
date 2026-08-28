@@ -1,0 +1,87 @@
+generated: '2026-08-28'
+method: searched
+source: >-
+  npm registry search + registry.npmjs.org package metadata; PyPI, and the
+  mutualofomaha GitHub organization (0 public repositories), probed 2026-08-28
+note: >-
+  NO API CLIENT LIBRARIES EXIST. Mutual of Omaha publishes no SDK for its
+  benefits-administration APIs, in any language, on any registry. The only
+  Mutual of Omaha packages found on npm are the "moo-*" AngularJS UI toolkit
+  components published by the company's former DXD team — front-end widgets, not
+  API clients — and they are abandoned: every one last published in 2015 or 2016.
+  They are also NOT published under the company's own GitHub organization
+  (github.com/mutualofomaha has zero public repositories); they live under the
+  personal/`moo-angular` accounts of individual engineers, so official is false.
+  No `SDKs` pointer is wired in apis.yml: sdk_count must not be credited for UI
+  widgets that wrap no API.
+sdk_count: 0
+packages:
+  - name: moo-angular-input
+    registry: npm
+    url: https://www.npmjs.com/package/moo-angular-input
+    version: 1.3.0
+    published: '2016-02-25'
+    official: false
+    kind: ui-component
+    language: JavaScript
+    repository: https://github.com/moo-angular/moo-angular-input
+    note: AngularJS directive from Mutual of Omaha's UI-Toolkit. Abandoned since 2016.
+  - name: moo-angular-accordion
+    registry: npm
+    url: https://www.npmjs.com/package/moo-angular-accordion
+    version: 1.2.1
+    published: '2016-03-30'
+    official: false
+    kind: ui-component
+    language: JavaScript
+    repository: https://github.com/TheLarkInn/moo-angular-accordion
+    note: AngularJS directive from Mutual of Omaha's UI-Toolkit. Abandoned since 2016.
+  - name: moo-snackbar
+    registry: npm
+    url: https://www.npmjs.com/package/moo-snackbar
+    version: 1.1.3
+    published: '2015-12-08'
+    official: false
+    kind: ui-component
+    language: JavaScript
+    repository: https://github.com/moo-angular/moo-snackbar
+    note: AngularJS directive from Mutual of Omaha's UI-Toolkit. Abandoned since 2015.
+  - name: moo-knob-switch
+    registry: npm
+    url: https://www.npmjs.com/package/moo-knob-switch
+    version: 0.1.1
+    published: '2016-01-28'
+    official: false
+    kind: ui-component
+    language: JavaScript
+    repository: https://github.com/moo-angular/moo-knob-switch
+    note: AngularJS knob-switch directive for Mutual of Omaha's DXD team. Abandoned since 2016.
+  - name: moo-utility-repeat-transclude
+    registry: npm
+    url: https://www.npmjs.com/package/moo-utility-repeat-transclude
+    version: 1.0.0
+    published: '2015-11-30'
+    official: false
+    kind: ui-utility
+    language: JavaScript
+    repository: https://github.com/moo-angular/utility-repeat-transclude
+    note: AngularJS utility directive from Mutual of Omaha's UI-Toolkit. Abandoned since 2015.
+  - name: moo-angular-starter
+    registry: npm
+    url: https://www.npmjs.com/package/moo-angular-starter
+    version: 1.0.1
+    published: '2016-01-29'
+    official: false
+    kind: scaffold
+    language: JavaScript
+    repository: null
+    note: >-
+      Application shell for generating Angular applications for Mutual of Omaha.
+      No repository declared in the package manifest. Abandoned since 2016.
+registries_checked:
+  - registry: npm
+    result: 6 Mutual of Omaha UI-toolkit packages, 0 API clients
+  - registry: PyPI
+    result: none (pypi.org/pypi/mutualofomaha/json -> 404)
+  - registry: GitHub (mutualofomaha org)
+    result: organization exists, 0 public repositories

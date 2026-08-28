@@ -3,27 +3,138 @@ name: "Mutual of Omaha"
 specificationVersion: '0.23'
 accessModel:
   pricing: unknown
-  onboarding: unknown
+  onboarding: partner
   trial: false
   try_now: false
   public: false
-  label: Unknown
-  confidence: low
-  source: []
-  generated: '2026-07-22'
-  method: derived
+  label: Partner Only
+  confidence: medium
+  source:
+    - https://view.mutualofomaha.com/mutual-of-omaha-api-connections
+    - https://www.mutualofomaha.com/about/newsroom/article/mutual-of-omaha-continues-expansion-of-api-offerings-to-streamline-benefits-administration-for-brokers-and-employers
+  generated: '2026-08-28'
+  method: searched
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mutual-of-omaha-insurance.png
-url: 
+url: >-
   https://raw.githubusercontent.com/api-evangelist/mutual-of-omaha-insurance/refs/heads/main/apis.yml
-modified: '2026-03-21'
-apis: []
+created: '2026-03-21'
+modified: '2026-08-28'
+tags:
+  - Insurance
+  - Life Insurance
+  - Medicare
+  - Employee Benefits
+  - Benefits Administration
+  - Group Insurance
+  - Financial Services
+  - Annuities
+  - Disability Insurance
+  - Dental Insurance
+maintainers:
+  - FN: API Evangelist
+    email: info@apievangelist.com
+    url: https://apievangelist.com
+apis:
+  - aid: mutual-of-omaha-insurance-benefits-administration-apis
+    name: Mutual of Omaha Benefits Administration APIs
+    description: >-
+      Mutual of Omaha's Workplace Solutions API program for group and voluntary
+      benefits, delivered to brokers and employers through benefits administration
+      platforms rather than a first-party developer portal. Three capabilities are
+      marketed: Plan Setup (pushing plan, rate and eligibility rules into the
+      benefits administration platform), Evidence of Insurability (EOI questions
+      and automated decisions inside the enrollment flow), and Enrollment
+      (real-time election updates passed from the benefits administration platform
+      to Mutual of Omaha). Live platform connections named by the company are ADP
+      Workforce Now, bswift, Employee Navigator and PlanSource, with Workday and
+      further Employee Navigator EOI connections announced for 2026. No public
+      OpenAPI, reference or developer portal was found for these APIs.
+    humanURL: https://view.mutualofomaha.com/mutual-of-omaha-api-connections
+    baseURL: null
+    x-base-url-note: >-
+      No base URL is published. repair-api-bases.py returns verdict `missing`, and
+      the docs pass confirms it: Mutual of Omaha ships no API reference or developer
+      portal that names a host. A gateway does exist at https://api.mutualofomaha.com
+      (nginx 403 at the root, 404 on every probed path, TLS live), but no Mutual of
+      Omaha document states that it is the base for the benefits-administration APIs,
+      so it is recorded as an observation and NOT asserted as baseURL. Left missing
+      rather than guessed from the domain.
+    tags:
+      - Benefits Administration
+      - Employee Benefits
+      - Enrollment
+      - Evidence of Insurability
+      - Group Insurance
+    properties:
+      - type: Documentation
+        url: https://view.mutualofomaha.com/mutual-of-omaha-api-connections
 common:
+  - type: DomainSecurity
+    url: security/mutual-of-omaha-insurance-domain-security.yml
+  - type: Website
+    url: https://www.mutualofomaha.com
   - type: GitHubOrganization
     url: https://github.com/mutualofomaha
   - type: LinkedIn
     url: https://www.linkedin.com/company/mutual-of-omaha
-  - type: Website
-    url: https://www.mutual-of-omaha-insurance.com
+  - type: Support
+    url: https://www.mutualofomaha.com/support/contact-us
+  - type: Blog
+    url: https://www.mutualofomaha.com/careers/life-at-mutual/careers-blog
+  - type: TermsOfService
+    url: https://www.mutualofomaha.com/legal-services/terms-of-use
+  - type: PrivacyPolicy
+    url: https://www.mutualofomaha.com/legal-services/privacy-notices-and-forms
+  - type: Newsroom
+    url: https://www.mutualofomaha.com/about/newsroom/news-releases
+  - type: Plans
+    url: plans/mutual-of-omaha-insurance-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/mutual-of-omaha-insurance-rate-limits.yml
+  - type: Lifecycle
+    url: lifecycle/mutual-of-omaha-insurance-lifecycle.yml
+  - type: LLMsTxt
+    url: llms/mutual-of-omaha-insurance-llms.txt
+  - type: Packages
+    url: packages/mutual-of-omaha-insurance-packages.yml
+  - type: Components
+    url: components/mutual-of-omaha-insurance-components.yml
 description: >-
-  Mutual of Omaha is a mutual insurance and financial services company providing insurance,
-  banking, and investment products to individuals, businesses, and groups.
+  Mutual of Omaha is a Fortune 500 mutual insurance and financial services company
+  headquartered in Omaha, Nebraska, providing life, disability, dental, vision,
+  critical illness, accident and long-term care insurance, Medicare supplement and
+  Medicare Advantage plans, annuities, retirement services, mortgage lending and
+  investment products to individuals, employers and groups across the United States.
+  Its Workplace Solutions unit runs an API integration program for group and
+  voluntary benefits — Plan Setup, Evidence of Insurability and Enrollment — but
+  those APIs are delivered through benefits administration platform partners such as
+  ADP Workforce Now, bswift, Employee Navigator and PlanSource rather than through a
+  public developer portal, and no machine-readable contract is published.
+x-enrichment:
+  date: '2026-08-28'
+  status: minimal
+  artifacts_added: 8
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: marketplace-only
+  detail: >-
+    Mutual of Omaha markets three production APIs (Plan Setup, Evidence of
+    Insurability, Enrollment) but ships them only as pre-built connections inside
+    partner benefits-administration platforms — ADP Workforce Now, bswift, Employee
+    Navigator and PlanSource — with no first-party developer site of any kind:
+    developer.mutualofomaha.com and apis.mutualofomaha.com have no DNS record, and
+    the only public API page is a marketing overview at view.mutualofomaha.com with
+    a "find out here" contact form and no reference, base URL or spec.
+  evidence:
+    - url: https://view.mutualofomaha.com/mutual-of-omaha-api-connections
+      status: 200
+    - url: https://developer.mutualofomaha.com/
+      status: 0
+    - url: https://api.mutualofomaha.com/
+      status: 403
+    - url: https://api.mutualofomaha.com/openapi.json
+      status: 404
+    - url: https://www.mutualofomaha.com/.well-known/api-catalog
+      status: 404
+  checked: '2026-08-28'

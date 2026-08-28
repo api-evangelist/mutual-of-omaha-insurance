@@ -1,0 +1,43 @@
+generated: '2026-08-28'
+method: searched
+source: >-
+  https://design.mutualofomaha.com/digital/getting-started/ (HTTP 200) and
+  https://cdn.mutualofomaha.com/design-guide/ (HTTP 200), probed 2026-08-28
+note: >-
+  Mutual of Omaha publishes a public design system with a CDN-distributed
+  front-end component library. These are presentation components for
+  mutualofomaha.com properties — they are not API-backed embeddable surfaces and
+  they do not call the benefits-administration APIs.
+families:
+  - name: Mutual of Omaha Design Guide
+    kind: css-and-js-component-library
+    docs: https://design.mutualofomaha.com/digital/getting-started/
+    distribution: cdn
+    note: >-
+      Versioned major releases served from the company CDN. The docs reference
+      major-version directories rather than a pinned build, so a consumer cannot
+      tell which patch level they are loading.
+    builds:
+      - version: '4'
+        url: https://cdn.mutualofomaha.com/design-guide/4/
+        status: 200
+        pinned: false
+      - version: '3.1'
+        url: https://cdn.mutualofomaha.com/design-guide/3.1/
+        status: not-probed
+        pinned: false
+      - version: '3'
+        url: https://cdn.mutualofomaha.com/design-guide/3/
+        status: not-probed
+        pinned: false
+      - version: '2'
+        url: https://cdn.mutualofomaha.com/design-guide/2/
+        status: not-probed
+        pinned: false
+  - name: Mutual of Omaha UI-Toolkit (moo-angular)
+    kind: angularjs-directives
+    distribution: npm
+    status: abandoned
+    note: >-
+      See packages/mutual-of-omaha-insurance-packages.yml. Last published 2016;
+      AngularJS 1.x directives, published outside the company GitHub organization.

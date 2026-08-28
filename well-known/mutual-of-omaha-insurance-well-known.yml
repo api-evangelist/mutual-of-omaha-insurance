@@ -1,0 +1,57 @@
+generated: '2026-08-28'
+method: probed
+source: live HTTPS probes of every host named in apis.yml, 2026-08-28
+note: >-
+  Every /.well-known/ path probed on every Mutual of Omaha host returned 404. No
+  security.txt, OpenID configuration, OAuth authorization server metadata,
+  api-catalog or ai-plugin manifest is served. Recorded as an absence — no
+  WellKnown or SecurityTxt pointer is wired in apis.yml, because none of these
+  documents exists to point at.
+hosts:
+  - host: www.mutualofomaha.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+  - host: api.mutualofomaha.com
+    note: >-
+      Live host. Root returns nginx 403 Forbidden; every probed path returns 404.
+      The gateway exists and is closed to anonymous callers.
+    documents:
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+  - host: view.mutualofomaha.com
+    documents:
+      - path: /llms.txt
+        status: 404
+        file: null
+  - host: design.mutualofomaha.com
+    documents:
+      - path: /llms.txt
+        status: 404
+        file: null

@@ -1,0 +1,15 @@
+generated: '2026-08-28'
+method: searched
+source: >-
+  https://view.mutualofomaha.com/mutual-of-omaha-api-connections (HTTP 200);
+  no developer reference exists to search. Probed 2026-08-28.
+limit_count: 0
+limits: []
+headers: []
+note: >-
+  No published rate limits. Mutual of Omaha ships no public API reference, so
+  there is no documented quota, window, burst, exhaustion status code or
+  RateLimit-* response header to record. The gateway host api.mutualofomaha.com
+  answers anonymous requests with nginx 403 at the root and 404 on every probed
+  path, so no runtime rate-limit header could be observed either. Honest zero,
+  not an omission.

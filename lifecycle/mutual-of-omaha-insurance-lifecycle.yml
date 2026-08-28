@@ -1,0 +1,36 @@
+generated: '2026-08-28'
+method: searched
+source: >-
+  https://www.mutualofomaha.com (200), https://www.mutualofomaha.com/about/newsroom/news-releases
+  (200), status.mutualofomaha.com (no DNS response). Searched 2026-08-28.
+versioning:
+  scheme: null
+  policy_url: null
+  note: No API versioning policy published.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  deprecation_header: null
+  note: >-
+    No deprecation policy, and no RFC 8594 Sunset/Deprecation header contract
+    published. No Deprecation pointer is wired in apis.yml.
+status_page:
+  url: null
+  note: >-
+    No API status page. status.mutualofomaha.com does not resolve. No StatusPage
+    pointer is wired in apis.yml.
+sla:
+  url: null
+  note: No published API SLA.
+roadmap:
+  url: null
+  note: >-
+    No developer roadmap page. Forward-looking API capability dates are announced
+    only in corporate news releases — Enrollment on ADP in Q2 2026, EOI on
+    Employee Navigator in Q2 2026, and Plan Setup / EOI / Enrollment on Workday
+    with no stated date — which is a press announcement, not a roadmap artifact.
+deprecated_operations: []
+note: >-
+  Recorded absence. Mutual of Omaha publishes no operational lifecycle artifacts
+  for its API program. No StatusPage, Deprecation or Roadmap pointer is emitted,
+  because none of those surfaces exists.

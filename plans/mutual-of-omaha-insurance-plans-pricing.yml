@@ -1,0 +1,16 @@
+generated: '2026-08-28'
+method: searched
+source: >-
+  https://view.mutualofomaha.com/mutual-of-omaha-api-connections (HTTP 200) and
+  https://www.mutualofomaha.com/about/newsroom/article/mutual-of-omaha-continues-expansion-of-api-offerings-to-streamline-benefits-administration-for-brokers-and-employers
+  (HTTP 200), searched 2026-08-28
+plan_count: 0
+plans: []
+note: >-
+  Mutual of Omaha publishes no plans, tiers or pricing for its API program. The
+  APIs are not sold as a product: they are integration connections between Mutual
+  of Omaha and a broker's or employer's benefits administration platform (ADP
+  Workforce Now, bswift, Employee Navigator, PlanSource), provisioned as part of a
+  group insurance relationship. There is no developer signup, no metered plan, and
+  no rate card. The insurance products themselves are quoted per group and are not
+  API pricing.
