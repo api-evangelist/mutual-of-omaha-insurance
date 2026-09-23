@@ -1,7 +1,9 @@
 ---
 title: Mutual of Omaha and bswift Streamline EOI for Employers
 url: https://www.businesswire.com/news/home/20250708122444/en/Mutual-of-Omaha-and-bswift-Streamline-EOI-for-Employers
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Mutual of Omaha Insurance" press release artificial intelligence'
 position: 2
 source: serpapi-google

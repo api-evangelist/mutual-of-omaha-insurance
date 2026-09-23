@@ -1,7 +1,9 @@
 ---
 title: Mutual of Omaha Board Approves Reorganization as ...
 url: https://news.ambest.com/newscontent.aspx?refnum=265274&altsrc=23
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Mutual of Omaha Insurance" press release artificial intelligence'
 position: 5
 source: serpapi-google
