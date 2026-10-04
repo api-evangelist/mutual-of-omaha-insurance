@@ -36,7 +36,7 @@ tags:
 - Employee Benefits
 - Benefits Administration
 - Group Insurance
-- Financial-Services
+- Financial Services
 - Annuities
 - Disability Insurance
 - Dental Insurance
@@ -51,6 +51,7 @@ tags_raw:
 - Annuities
 - Disability Insurance
 - Dental Insurance
+- Financial-Services
 maintainers:
 - FN: API Evangelist
   email: info@apievangelist.com
