@@ -1,4 +1,4 @@
-# Mutual of Omaha Insurance (mutual-of-omaha-insurance)
+# Mutual of Omaha
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,35 +64,100 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Mutual of Omaha Insurance is a Fortune 500 company. This repository captures the APIs, developer tools, and machine-readable API artifacts for Mutual of Omaha Insurance.
+Mutual of Omaha is a Fortune 500 mutual insurance and financial services company headquartered in Omaha, Nebraska, providing life, disability, dental, vision, critical illness, accident and long-term care insurance, Medicare supplement and Medicare Advantage plans, annuities, retirement services, mortgage lending and investment products to individuals, employers and groups across the United States. Its Workplace Solutions unit runs an API integration program for group and voluntary benefits — Plan Setup, Evidence of Insurability and Enrollment — but those APIs are delivered through benefits administration platform partners such as ADP Workforce Now, bswift, Employee Navigator and PlanSource rather than through a public developer portal, and no machine-readable contract is published.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/mutual-of-omaha-insurance/refs/heads/main/apis.yml)
+**Areas:** Insurance · Life Insurance · Medicare · Employee Benefits · Benefits Administration · Group Insurance · Financial Services · Annuities · Disability Insurance · Dental Insurance
 
-## Scope
+## Mutual of Omaha on APIs.io
 
-- **Type:** Contract
-- **Position:** Consuming
-- **Access:** 3rd-Party
+Everything profiled for Mutual of Omaha is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/mutual-of-omaha-insurance/](https://apis.io/providers/mutual-of-omaha-insurance/)** — or go straight to one of the APIs or properties below.
 
-## Tags:
+### APIs (1)
 
- - Fortune 500
+- [Mutual of Omaha Benefits Administration APIs](https://apis.io/apis/mutual-of-omaha-insurance/mutual-of-omaha-insurance-benefits-administration-apis/) — Mutual of Omaha's Workplace Solutions API program for group and voluntary benefits, delivered to brokers and employers through benefits administration…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-21
-- **Modified:** 2026-03-21
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Security (1)
 
-No public APIs have been documented yet. Contributions welcome.
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Mutual Of Omaha Insurance Domain Security](https://apis.io/security/mutual-of-omaha-insurance/mutual-of-omaha-insurance-domain-security/)
 
-- [Website](https://www.mutual-of-omaha-insurance.com)
+#### Plans and pricing (1)
 
-## Maintainers
+Published plans, tiers and prices.
 
-**FN:** API Evangelist
+- [Mutual Of Omaha Insurance Plans Pricing](https://apis.io/plans/mutual-of-omaha-insurance/mutual-of-omaha-insurance-plans-pricing/)
 
-**Email:** info@apievangelist.com
+#### Rate limits (1)
+
+Published request limits.
+
+- [Mutual Of Omaha Insurance Rate Limits](https://apis.io/rate-limits/mutual-of-omaha-insurance/mutual-of-omaha-insurance-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.mutualofomaha.com)
+- [Support](https://www.mutualofomaha.com/support/contact-us)
+- [Blog](https://www.mutualofomaha.com/careers/life-at-mutual/careers-blog)
+- [Terms of service](https://www.mutualofomaha.com/legal-services/terms-of-use)
+- [Privacy policy](https://www.mutualofomaha.com/legal-services/privacy-notices-and-forms)
+- [GitHub](https://github.com/mutualofomaha)
+
+## API Evangelist rating
+
+**Kin Score 13.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 58.0 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 21.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 12.3** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/mutual-of-omaha-insurance/](https://apis.io/providers/mutual-of-omaha-insurance/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Mutual of Omaha: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/mutual-of-omaha-insurance/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
